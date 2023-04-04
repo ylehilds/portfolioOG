@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <meta charset="UTF-8">
-<title>lab4 &#8211; IT 515R &#8211; IoT Systems Engineering</title>
+<title>Lab 4 &#8211; IT 515R &#8211; IoT Systems Engineering</title>
 </head>
 <body>
 <article>
-	<header><h1>Lab4</h1></header>
+	<header><h1>Lab 4</h1></header>
 	<div>
 		<p><span style="font-weight: 400;">Event Bus</span></p>
 <h1><span style="font-weight: 400;">Online Link</span></h1>
-<p><span style="font-weight: 400;">This lab is available as part of my online portfolio at: </span><a href="https://ylehilds.github.io/portfolio/IoTSystemsEngineering/labs/lab4"><span style="font-weight: 400;">https://ylehilds.github.io/portfolio/IoTSystemsEngineering/labs/lab4</span></a></p>
+<p><span style="font-weight: 400;">This lab is available as part of my online portfolio at: </span><a href="https://www.lehi.dev"><span style="font-weight: 400;">https://www.lehi.dev</span></a></p>
 <p>&nbsp;</p>
 <h1><span style="font-weight: 400;">Objective</span></h1>
 <p><span style="font-weight: 400;">The purpose of this lab is to learn how to implement an event hub, send topic messages to subscribed clients, get experience with multiple actuators interaction. These principles include:</span></p>
@@ -91,12 +91,12 @@
 <li style="font-weight: 400;"><span style="font-weight: 400;">Used the Arduino GPIO pinout to decide which pins to use for this project from </span><a href="https://wiki.wemos.cc/products:d1:d1_mini#documentation"><span style="font-weight: 400;">https://wiki.wemos.cc/products:d1:d1_mini#documentation</span></a><span style="font-weight: 400;">.</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">In version 1 I wanted to design a system that all it would do was to measure the distance in centimeters of an object and the Ultrasonic Sensor HC-SR04 and print out the distance using Serial Monitor.</span></li>
 </ol>
-<p><a href="../images/uploads/2018/10/UltraSonicPic.jpg"><img loading="lazy" class="alignnone size-full wp-image-76" src="../images/uploads/2018/10/UltraSonicPic.jpg" alt="" width="2016" height="1512" srcset="../images/uploads/2018/10/UltraSonicPic.jpg 2016w, ../images/uploads/2018/10/UltraSonicPic-300x225.jpg 300w, ../images/uploads/2018/10/UltraSonicPic-768x576.jpg 768w, ../images/uploads/2018/10/UltraSonicPic-1024x768.jpg 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4UltraSonicSensorBreadboardPicture.jpeg"><img loading="lazy" class="alignnone size-full wp-image-76" src="./images/lab4UltraSonicSensorBreadboardPicture.jpeg" alt="" width="2016" height="1512" /></a></p>
 <ol>
 <li style="font-weight: 400;"><span style="font-weight: 400;">In Version 2 Make the arduino that has the Ultrasonic Sensor HC-SR04 send messages to mosquito message broker and subscribe itself so you can see the message coming through before you can see on the stoplight arduino through Serial monitor prints.</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Refactor stoplight arduino so that it no longer send messages via http. Subscribe to topics that will be used for the communication between all devices.</span></li>
 </ol>
-<p><a href="../images/uploads/2018/10/stoplightLab4Pic.jpg"><img loading="lazy" class="alignnone size-full wp-image-77" src="../images/uploads/2018/10/stoplightLab4Pic.jpg" alt="" width="4032" height="3024" srcset="../images/uploads/2018/10/stoplightLab4Pic.jpg 4032w, ../images/uploads/2018/10/stoplightLab4Pic-300x225.jpg 300w, ../images/uploads/2018/10/stoplightLab4Pic-768x576.jpg 768w, ../images/uploads/2018/10/stoplightLab4Pic-1024x768.jpg 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4ArduinoStopLightsBreadboardPicture.jpeg"><img loading="lazy" class="alignnone size-full wp-image-77" src="./images/lab4ArduinoStopLightsBreadboardPicture.jpeg" alt="" width="4032" height="3024" /></a></p>
 <ol>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Reused the existing lab 2 breadboard, leds, resistors with Wemos D1 mini, to accept messages from mosquito message broker, the messages are commands to turn on and off led lights.</span>
 <ol>
@@ -123,7 +123,7 @@
 <li style="font-weight: 400;"><span style="font-weight: 400;">With a new soldered arduino then connected the reed switch and using  a GPIO pin for input and 3V.</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">As the reed switch come close in proximity it closes the circuit which transitions its state to “LOW”. Open circuit is then “HIGH”.</span></li>
 </ol>
-<p><a href="../images/uploads/2018/10/ReedSwitchPic.jpg"><img loading="lazy" class="alignnone size-full wp-image-78" src="../images/uploads/2018/10/ReedSwitchPic.jpg" alt="" width="1512" height="2016" srcset="../images/uploads/2018/10/ReedSwitchPic.jpg 1512w, ../images/uploads/2018/10/ReedSwitchPic-225x300.jpg 225w, ../images/uploads/2018/10/ReedSwitchPic-768x1024.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4ReedSwitchArduinoBreadboardPicture.jpeg"><img loading="lazy" class="alignnone size-full wp-image-78" src="./images/lab4ReedSwitchArduinoBreadboardPicture.jpeg" alt="" width="1512" height="2016" /></a></p>
 <ol>
 <li style="font-weight: 400;"><span style="font-weight: 400;">For this lab we want to send a message to the stoplight when the circuit is closed then send a message to stoplight letting it know that it can operate as normal, turning on lights and sensing proximity. As the circuit becomes open, then send a message to stoplight arduino letting it know to turn off all the lights and disregard any message command to turn on lights.</span></li>
 </ol>
@@ -155,7 +155,7 @@
 </li>
 </ol>
 <p>&nbsp;</p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM.png"><img loading="lazy" class="alignnone size-full wp-image-79" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM.png" alt="" width="1694" height="1010" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM.png 1694w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM-300x179.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM-768x458.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.07.18-PM-1024x611.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4StateMachineDiagram.png"><img loading="lazy" class="alignnone size-full wp-image-79" src="./images/lab4StateMachineDiagram.png" alt="" width="1694" height="1010" /></a></p>
 <ul>
 <li style="font-weight: 400;"><span style="font-weight: 400;">On Start up, the machine will be on LED Off state</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Case “LED OFF”</span>
@@ -179,21 +179,21 @@
 </ol>
 </li>
 </ol>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM.png"><img loading="lazy" class="alignnone size-full wp-image-80" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM.png" alt="" width="1302" height="820" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM.png 1302w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM-300x189.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM-768x484.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.39-PM-1024x645.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM.png"><img loading="lazy" class="alignnone size-full wp-image-81" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM.png" alt="" width="2032" height="1544" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM.png 2032w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM-300x228.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM-768x584.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.57.53-PM-1024x778.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM.png"><img loading="lazy" class="alignnone size-full wp-image-82" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM.png" alt="" width="1578" height="984" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM.png 1578w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM-300x187.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM-768x479.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.04-PM-1024x639.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM.png"><img loading="lazy" class="alignnone size-full wp-image-83" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM.png" alt="" width="1942" height="1108" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM.png 1942w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM-300x171.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM-768x438.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-9.52.26-PM-1024x584.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4ComponentDiagramArduinoLights.png"><img loading="lazy" class="alignnone size-full wp-image-80" src="./images/lab4ComponentDiagramArduinoLights.png" alt="" width="1302" height="820" /></a></p>
+<p><a href="./images/lab4SchematicDiagramArduinoLights.png"><img loading="lazy" class="alignnone size-full wp-image-81" src="./images/lab4SchematicDiagramArduinoLights.png" alt="" width="2032" height="1544" /></a></p>
+<p><a href="./images/lab4ComponentsDiagramUltraSonicSensor.png"><img loading="lazy" class="alignnone size-full wp-image-82" src="./images/lab4ComponentsDiagramUltraSonicSensor.png" alt="" width="1578" height="984" /></a></p>
+<p><a href="./images/lab4SchematicDiagramUltraSonicSensor.png"><img loading="lazy" class="alignnone size-full wp-image-83" src="./images/lab4SchematicDiagramUltraSonicSensor.png" alt="" width="1942" height="1108" /></a></p>
 <p>&nbsp;</p>
-<p><a href="../images/uploads/2018/10/ReedSwitchBreadBoard.png"><img loading="lazy" class="alignnone size-full wp-image-84" src="../images/uploads/2018/10/ReedSwitchBreadBoard.png" alt="" width="1094" height="844" srcset="../images/uploads/2018/10/ReedSwitchBreadBoard.png 1094w, ../images/uploads/2018/10/ReedSwitchBreadBoard-300x231.png 300w, ../images/uploads/2018/10/ReedSwitchBreadBoard-768x592.png 768w, ../images/uploads/2018/10/ReedSwitchBreadBoard-1024x790.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4ComponentsDiagramReedSwitch.png"><img loading="lazy" class="alignnone size-full wp-image-84" src="./images/lab4ComponentsDiagramReedSwitch.png" alt="" width="1094" height="844" /></a></p>
 <p>&nbsp;</p>
-<p><a href="../images/uploads/2018/10/ReedSwitchSchematic.png"><img loading="lazy" class="alignnone size-full wp-image-85" src="../images/uploads/2018/10/ReedSwitchSchematic.png" alt="" width="1018" height="1412" srcset="../images/uploads/2018/10/ReedSwitchSchematic.png 1018w, ../images/uploads/2018/10/ReedSwitchSchematic-216x300.png 216w, ../images/uploads/2018/10/ReedSwitchSchematic-768x1065.png 768w, ../images/uploads/2018/10/ReedSwitchSchematic-738x1024.png 738w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4SchematicDiagramReedSwitch.png"><img loading="lazy" class="alignnone size-full wp-image-85" src="./images/lab4SchematicDiagramReedSwitch.png" alt="" width="1018" height="1412" /></a></p>
 <p><span style="font-weight: 400;">Diagrams were facilitated by open source programs such as: Google drive plugin draw.io Diagrams and Fritzing.</span></p>
 <p>&nbsp;</p>
 <ol>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Program the code in the Arduino IDE </span>
 <ol>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Code the Arduino GPIO pins interaction with breadboards, resistors, LEDs, Ultrasonic Sensor HC-SR04 and Reed Switch accordingly to match the previous component/schematic diagram.</span></li>
-<li style="font-weight: 400;"><span style="font-weight: 400;">Test/Debug constantly so the final product would be bug free. You can debug by first making sure the baud rate is set up in setup method. Then click on serial monitor icon <a href="../images/uploads/2018/09/Screen-Shot-2018-09-27-at-12.21.06-AM.png"><img loading="lazy" class="smallIcon" src="../images/uploads/2018/09/Screen-Shot-2018-09-27-at-12.21.06-AM.png" alt="" width="27" height="28" /></a> </span><span style="font-weight: 400;">. Do this Debugging step with all 3 arduinos as to see what is happening as you code.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Test/Debug constantly so the final product would be bug free. You can debug by first making sure the baud rate is set up in setup method. Then click on serial monitor icon <a href="./images/lab4SerialMonitorIcon.png"><img loading="lazy" class="smallIcon" src="./images/lab4SerialMonitorIcon.png" alt="" width="27" height="28" /></a> </span><span style="font-weight: 400;">. Do this Debugging step with all 3 arduinos as to see what is happening as you code.</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Use commands such as Serial.println(&lt;variableToBeEvaluated&gt;) to print out debug messages, so you can make sure what you think the code is doing is actually happening.</span></li>
 </ol>
 </li>
@@ -228,16 +228,16 @@
 <p><span style="font-weight: 400;">&#8212; Lehi Alcantara</span></p>
 <h1><span style="font-weight: 400;">Appendix</span></h1>
 <h2><span style="font-weight: 400;">Appendix 1: System Flowchart</span></h2>
-<p><a href="../images/uploads/2018/10/System-Flowchart-Lab-4-1.jpg"><img loading="lazy" class="alignnone size-full wp-image-92" src="../images/uploads/2018/10/System-Flowchart-Lab-4-1.jpg" alt="" width="741" height="1131" srcset="../images/uploads/2018/10/System-Flowchart-Lab-4-1.jpg 741w, ../images/uploads/2018/10/System-Flowchart-Lab-4-1-197x300.jpg 197w, ../images/uploads/2018/10/System-Flowchart-Lab-4-1-671x1024.jpg 671w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" /></a></p>
+<p><a href="./images/lab4SystemFlowchart.jpeg"><img loading="lazy" class="alignnone size-full wp-image-92" src="./images/lab4SystemFlowchart.jpeg" alt="" width="741" height="1131" /></a></p>
 <p>&nbsp;</p>
 <p><span style="font-weight: 400;">Appendix 2: Stoplight Arduino Monitor Output</span></p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM.png"><img loading="lazy" class="alignnone size-full wp-image-87" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM.png" alt="" width="1708" height="1492" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM.png 1708w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM-300x262.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM-768x671.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.31.17-PM-1024x895.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4StopLightArduinoMonitorOutput.png"><img loading="lazy" class="alignnone size-full wp-image-87" src="./images/lab4StopLightArduinoMonitorOutput.png" alt="" width="1708" height="1492" /></a></p>
 <p>&nbsp;</p>
 <p><span style="font-weight: 400;">Appendix 3: Ultrasonic Sensor HC-SR04 Monitor Output</span></p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM.png"><img loading="lazy" class="alignnone size-full wp-image-88" src="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM.png" alt="" width="1688" height="1458" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM.png 1688w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM-300x259.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM-768x663.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-29-at-11.27.52-PM-1024x884.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4UltraSonicSensorMonitorOutput.png"><img loading="lazy" class="alignnone size-full wp-image-88" src="./images/lab4UltraSonicSensorMonitorOutput.png" alt="" width="1688" height="1458" /></a></p>
 <h2><span style="font-weight: 400;">Appendix 4: Reed Switch Monitor Output</span></h2>
 <p>&nbsp;</p>
-<p><a href="../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM.png"><img loading="lazy" class="alignnone size-full wp-image-89" src="../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM.png" alt="" width="1688" height="944" srcset="../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM.png 1688w, ../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM-300x168.png 300w, ../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM-768x429.png 768w, ../images/uploads/2018/10/Screen-Shot-2018-10-30-at-12.34.25-AM-1024x573.png 1024w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a></p>
+<p><a href="./images/lab4ReedSwitchMonitorOutput.png"><img loading="lazy" class="alignnone size-full wp-image-89" src="./images/lab4ReedSwitchMonitorOutput.png" alt="" width="1688" height="944" /></a></p>
 <p>&nbsp;</p>
 <h2><span style="font-weight: 400;">Appendix 4: Arduino Code</span></h2>
 <p>&nbsp;</p>
